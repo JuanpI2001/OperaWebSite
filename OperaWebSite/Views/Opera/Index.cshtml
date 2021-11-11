@@ -29,11 +29,38 @@
                 <td>
                     @Html.ActionLink("Delete", "Delete", new { id = item.OperaId })
                 </td>
-                <td>@Html.ActionLink("Edit","Edit",new {id=item.OperaId })</td>
+                <td>@Html.ActionLink("Edit", "Edit", new { id = item.OperaId })</td>
             </tr>
         }
     </table>
+    @section izqBar{
+        <a href="https://es.wikipedia.org/wiki/La_flauta_mágica">La Flauta Magica</a>
+        <br />
+        <a href="https://es.wikipedia.org/wiki/Don_Giovanni">Don Giovanni</a>
+        <br />
+        <a href="https://es.wikipedia.org/wiki/Las_bodas_de_Fígaro">Las Bodas De Figaro</a>
+    }
+    @section derBar{
+        <div id="contenedorImg">
+            <img id="imagen" src="~/image/Johann_Sebastian_Bach.jpg" />
+            <br />
+            <a href="https://es.wikipedia.org/wiki/Johann_Sebastian_Bach">Johann Sebastian Bach</a>
 
+        </div>
+        <div id="contenedorImg">
+            <img id="imagen" src="~/image/Igor_Stravinsky_.jpg" />
+            <br />
+            <a href="https://es.wikipedia.org/wiki/Ígor_Stravinski">Igor Stravinski</a>
+
+        </div>
+        <div id="contenedorImg">
+            <img id="imagen" src="~/image/Franz_Schubert.jpg" />
+            <br />
+            <a href="https://es.wikipedia.org/wiki/Franz_Schubert">Franz Schubert</a>
+
+        </div>
+
+    }
 
 </body>
 </html>

@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/main.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="header">
+        <div id="banner">
+            <h1> Banner </h1>
+            <img id="imagen" src="~/image/colon.jpg" />
+        </div>
+        <div id="login">
+            <h1> Login </h1>
+        </div>
+    </div>
+    <div id="menu">
+        @Html.ActionLink("Inicio", "Index", "Home")
+        @Html.ActionLink("Opera", "Index", "Opera")
+        @Html.ActionLink("Empleado", "Index", "Empleado")
+    </div>
+    <div id="medio">
+        <div id="sidebarIzq">
+            @if (IsSectionDefined("izqBar"))
+            {
+                @RenderSection("izqBar")
+            }
+            else
+            {
+                <h3>Direccion: Ramos 222</h3>
+                <h3>Telefono:2222-2222</h3>
+            }
+        </div>
+        <div id="content">
+            @RenderBody()
+        </div>
+        <div id="sidebarDer">
+            @if (IsSectionDefined("derBar"))
+            {
+                @RenderSection("derBar")
+            }
+            else
+            {
+                <img src="~/image/Exterior1.jpg" />
+                <img src="~/image/Exterior2.jpg" />
+                <img src="~/image/Exterior3.jpg" />
+            }
+        </div>
+    </div> 
+
+    <div id="footer">
+        Este es el footer
+    </div>
+
+</body>
+</html>

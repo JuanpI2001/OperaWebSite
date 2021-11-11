@@ -1,0 +1,74 @@
+﻿body {
+    padding:0px;
+    margin:0px;
+    width:1200px;
+    background-color:aqua;
+}
+#header {
+    background-color: blue;
+    display: inline-flex;
+    width: 1200px;
+}
+
+#menu {
+    background-color: lightcyan;
+    text-align:center;
+    font-size:20px;
+    text-align:right;
+}
+#banner{
+    height:200px;
+    width:800px;
+    border:solid 3px black;
+    display:flex;
+   
+}
+
+#login {
+    float: right;
+    height: 200px;
+    width: 400px;
+    border: solid 3px black;
+}
+#medio {
+    display: flex;
+    width: 1200px;
+}
+#sidebarDer {
+    background-color: dodgerblue;
+    color: darkblue;
+    float: right;
+    border: double 2px lightcyan;
+    height: 600px;
+    width: 400px;
+}
+#sidebarIzq {
+    background-color: dodgerblue;
+    color: darkblue;
+    float: left;
+    border: double 2px lightcyan;
+    height:600px;
+    width:400px;
+}
+
+#content {
+    height: 600px;
+    width: 400px;
+}
+
+#footer {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    clear: both;
+    height:200px;
+    text-align:right;
+    
+}
+#contenedorImg{
+    height:200px;
+}
+#imagen {
+    height: 150px;
+}
+

@@ -1,17 +1,24 @@
 ﻿
 @{
-    Layout = null;
+    ViewBag.Title = "Index";
 }
 
 <!DOCTYPE html>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-</head>
+
 <body>
-    <div> 
+    <div>
+        <h1>@ViewBag.Fecha</h1>
+        <h1>@ViewBag.Hora</h1>
     </div>
+    @section izqBar{
+        <p>Fue inaugurado el 3 de agosto de 1778, con el nombre de Nuovo Regio Ducal Teatro alla Scala, con la ópera L'Europa riconosciuta de Salieri.</p>
+        <p>La estructura original fue renovada en 1907, cuando se cambió al diseño actual. En 1943, durante la Segunda Guerra Mundial, los bombardeos dañaron seriamente el teatro. Fue reconstruido y reestrenado el 11 de mayo de 1946 con un concierto memorable dirigido por Arturo Toscanini.</p>
+    }
+    @section derBar{
+        <img src="~/image/Scala1.jpg"/>
+        <img src="~/image/Scala2.jpg"/>
+        <img src="~/image/Scala3.jpg"/>
+    }
 </body>
-</html>
+

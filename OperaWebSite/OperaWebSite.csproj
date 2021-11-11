@@ -94,11 +94,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\main.css" />
     <Content Include="Global.asax" />
+    <Content Include="image\colon.jpg" />
+    <Content Include="image\Exterior1.jpg" />
+    <Content Include="image\Exterior2.jpg" />
+    <Content Include="image\Exterior3.jpg" />
+    <Content Include="image\Franz_Schubert.jpg" />
+    <Content Include="image\Igor_Stravinsky_.jpg" />
+    <Content Include="image\Johann_Sebastian_Bach.jpg" />
+    <Content Include="image\Scala1.jpg" />
+    <Content Include="image\Scala2.jpg" />
+    <Content Include="image\Scala3.jpg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\EmpleadoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\OperaController.cs" />
     <Compile Include="Controllers\TestController.cs" />
@@ -134,6 +146,8 @@
     <Content Include="Views\Test\SearchByTitle.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Empleado\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -143,7 +157,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Shared\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
